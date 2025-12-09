@@ -18,9 +18,12 @@ https://duck-tective21.gamer.gd/
 * **Environment:** Compatible with VS Code Local Server or XAMPP
 
 ## 3. Team Members
-[Your Name Here]: Lead Developer - Implemented Game Logic and OOP Classes.
-[Member Name]: UI/UX Designer - Designed the CSS interface, color scheme, and animations.
-[Remigio, Ryland Jocef]: QA / Content - Created the code snippets (cases) and hints, testing.
+[Franco, Princess Jinky]: Lead Developer - Implemented Game Logic and OOP Classes.
+[Remigio, Ryland Jocef]: UI/UX Designer - Designed the CSS interface, color scheme, and animations.
+[Fortunato, Reimhel]: QA / Content - Created the code snippets (cases) and hints, testing.
+## Other Members
+Levita, Shreena
+Bartolazo, Barry
 
 ## 4. How to Play
 1.  **Start the Game:** The game loads the first case automatically.
