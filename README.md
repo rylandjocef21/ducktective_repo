@@ -59,5 +59,5 @@ https://duck-tective21.gamer.gd/
 * Type the missing character in the input box.
 * Press **Enter** or click **Check Answer**.
 
-* ## 7. Video Demonstration
+## 7. Video Demonstration
 * https://drive.google.com/drive/folders/1sr9qbzWRdqYPD-qIB0pAonm1zLABYNId?usp=sharing
