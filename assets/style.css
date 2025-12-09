@@ -101,17 +101,6 @@ body {
     box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
 }
 
-.code-snippet::before {
-    content: "PHP EDITOR";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #30363d;
-    color: #8b949e;
-    font-size: 0.7rem;
-    padding: 2px 8px;
-    border-bottom-left-radius: 8px;
-}
 
 /* Hints & Messages */
 .hint {
