@@ -3,7 +3,7 @@
 ### 🌐 Live Demo
 **Play the game online here:** 
 https://duck-tective21.gamer.gd/
-(It's not available yet check back after 72hrs.)
+(It's not available yet come back after 72hrs.)
 
 
 ## 1. Project Overview
