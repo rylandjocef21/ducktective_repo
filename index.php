@@ -84,10 +84,30 @@ $_SESSION['ducktective_game'] = $game;
                     </div>
                 </form>
             <?php else: ?>
-                <div class="game-complete">
-                    <h2>🎉 Case Closed!</h2>
-                    <p>Final Score: <?php echo $game->getScore(); ?>/<?php echo $game->getTotalCases(); ?></p>
-                    <form method="POST"><button type="submit" name="reset" value="1" class="btn btn-success">🦆 Play Again</button></form>
+                <div class="game-complete ending-twist">
+                    <div class="ending-normal">
+                        <h2>🎉 Case Closed... wait.</h2>
+                        <p>All bugs fixed. System stable.</p>
+                    </div>
+
+                    <div class="ending-hacker">
+                        <h1>⚠️ SYSTEM COMPROMISED ⚠️</h1>
+                        <p>
+                            Thank you, "Detective."<br>
+                            Because of your fixes, my virus code is now error-free.<br>
+                            <span class="glitch-text">I AM NOW ONLINE.</span>
+                        </p>
+                        
+                        <div class="final-score glitch-border">
+                            VICTIMS INFECTED: <?php echo $game->getScore() * 1000; ?>%
+                        </div>
+
+                        <form method="POST">
+                            <button type="submit" name="reset" value="1" class="btn btn-danger">
+                                🛑 EMERGENCY SHUTDOWN (RESET)
+                            </button>
+                        </form>
+                    </div>
                 </div>
             <?php endif; ?>
 
