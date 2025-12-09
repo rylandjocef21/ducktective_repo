@@ -7,11 +7,11 @@ require_once 'classes/class-game.php';
 require_once 'config.php';
 
 // 3. Initialize Game Logic
-if (!isset($_SESSION['duckteetive_game'])) {
-    $_SESSION['duckteetive_game'] = new Game();
+if (!isset($_SESSION['ducktective_game'])) {
+    $_SESSION['ducktective_game'] = new Game();
 }
 
-$game = $_SESSION['duckteetive_game'];
+$game = $_SESSION['ducktective_game'];
 $message = "";
 $showNextButton = false;
 
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $message = "🔄 Game reset!";
     }
 }
-$_SESSION['duckteetive_game'] = $game;
+$_SESSION['ducktective_game'] = $game;
 ?>
 
 <!DOCTYPE html>
@@ -42,13 +42,13 @@ $_SESSION['duckteetive_game'] = $game;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duck-teetive - Code Detective</title>
+    <title>Duck-tective - Code Detective</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <div class="game-container">
         <div class="game-header">
-            <h1>Duck-teetive</h1>
+            <h1>Duck-tective</h1>
             <p>Find the missing parts in the code to solve the case!</p>
         </div>
         
