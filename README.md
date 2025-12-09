@@ -3,7 +3,7 @@
 ### 🌐 Live Demo
 **Play the game online here:** 
 https://duck-tective21.gamer.gd/
-(It's not available yet come back after 72hrs.)
+(It's not available yet check back after 72hrs.)
 
 
 ## 1. Project Overview
@@ -20,7 +20,7 @@ https://duck-tective21.gamer.gd/
 
 ## 3. Team Members
 
-**Franco, Princess Jinky / Levita, Shreena** (Lead Developer)
+**Franco, Princess Jinky / Levita, Shereena** (Lead Developer)
   * Implemented Game Logic and OOP Classes.
 
 **Remigio, Ryland Jocef** (UI/UX Designer)
@@ -59,5 +59,11 @@ https://duck-tective21.gamer.gd/
 * Type the missing character in the input box.
 * Press **Enter** or click **Check Answer**.
 
-## 7. Video Demonstration
-* https://drive.google.com/drive/folders/1sr9qbzWRdqYPD-qIB0pAonm1zLABYNId?usp=sharing
+## B. Complete Source Code
+
+
+## C. Technical Documentation
+[Technical_Documentation - DuckTective.pdf](https://github.com/user-attachments/files/24052417/Technical_Documentation.-.DuckTective.pdf)
+
+## 2. Individual Video Demonstration
+https://drive.google.com/drive/folders/1sr9qbzWRdqYPD-qIB0pAonm1zLABYNId?usp=sharing
