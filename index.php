@@ -3,7 +3,7 @@
 require_once 'classes/class-codecase.php';
 require_once 'classes/class-game.php';
 
-// 2. Load Configuration (Starts Session AFTER classes are known)
+
 require_once 'config.php';
 
 // 3. Initialize Game Logic
