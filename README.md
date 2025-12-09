@@ -29,8 +29,9 @@ https://duck-tective21.gamer.gd/
   * Created the code snippets (cases) and hints, testing.
 
 ## Other Members
-**Levita, Shreena**
-**Bartolazo, Barry**
+Levita, Shreena
+
+Bartolazo, Barry
 
 ## 4. How to Play
 1.  **Start the Game:** The game loads the first case automatically.
