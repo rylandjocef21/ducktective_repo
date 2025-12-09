@@ -20,7 +20,7 @@ https://duck-tective21.gamer.gd/
 
 ## 3. Team Members
 
-**Franco, Princess Jinky / Levita, Shreena** (Lead Developer)
+**Franco, Princess Jinky / Levita, Shereena** (Lead Developer)
   * Implemented Game Logic and OOP Classes.
 
 **Remigio, Ryland Jocef** (UI/UX Designer)
