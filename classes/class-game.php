@@ -3,7 +3,6 @@ class Game {
     private $cases = [];
     private $currentCaseIndex = 0;
     private $score = 0;
-    // 🆕 NEW: Keep track of which cases are already solved
     private $solvedCases = []; 
     
     public function __construct() {
@@ -11,7 +10,6 @@ class Game {
     }
     
     private function initializeCases() {
-        // Clear everything to be safe
         $this->cases = [];
         
         $this->cases[] = new CodeCase(1, "if (x == 5) { echo 'Hello'; }", ":", "Missing symbol after condition");
@@ -33,16 +31,14 @@ class Game {
     public function checkAnswer($answer) {
         $currentCase = $this->getCurrentCase();
         
-        // 1. Check if the answer is actually correct
         if ($currentCase && $currentCase->checkAnswer($answer)) {
             
-            // 2. 🛡️ ANTI-CHEAT: Check if we ALREADY solved this specific case ID
             if (!in_array($currentCase->getId(), $this->solvedCases)) {
-                $this->score++; // Add point only if it's new
-                $this->solvedCases[] = $currentCase->getId(); // Mark as solved
+                $this->score++;
+                $this->solvedCases[] = $currentCase->getId();
             }
             
-            return true; // Return true so the "Correct!" message still shows
+            return true;
         }
         
         return false;
@@ -72,7 +68,7 @@ class Game {
     public function resetGame() {
         $this->currentCaseIndex = 0;
         $this->score = 0;
-        $this->solvedCases = []; // 🗑️ Clear the solved list on reset
+        $this->solvedCases = [];
         $this->initializeCases();
     }
 }

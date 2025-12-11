@@ -1,19 +1,15 @@
 <?php
-// 1. Load Classes
 require_once 'classes/class-codecase.php';
 require_once 'classes/class-game.php';
 
-// 2. Load Config (Optional)
 if (file_exists('config.php')) {
     require_once 'config.php';
 }
 
-// Start Session
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// 3. Initialize Game Logic
 if (!isset($_SESSION['ducktective_game'])) {
     $_SESSION['ducktective_game'] = new Game();
 }
@@ -22,28 +18,23 @@ $game = $_SESSION['ducktective_game'];
 $message = "";
 $showNextButton = false;
 
-// Initialize Screen State (Default to START)
 if (!isset($_SESSION['screen_state'])) {
     $_SESSION['screen_state'] = 'START';
 }
 
-// 4. Handle POST Requests
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
-    // ▶️ START BUTTON CLICKED
     if (isset($_POST['start_game'])) {
-        $game->resetGame(); // Ensure fresh start
-        $_SESSION['screen_state'] = 'GAME'; // Switch to Game Mode
+        $game->resetGame();
+        $_SESSION['screen_state'] = 'GAME';
     }
     
-    // 🔄 RESET / TRY AGAIN CLICKED
     elseif (isset($_POST['reset'])) {
         $game->resetGame();
-        $_SESSION['screen_state'] = 'START'; // Go back to Title Screen
+        $_SESSION['screen_state'] = 'START';
         $message = "";
     }
     
-    // 🔍 CHECK ANSWER CLICKED
     elseif (isset($_POST['answer']) && !empty(trim($_POST['answer']))) {
         if ($game->checkAnswer(trim($_POST['answer']))) {
             $message = "✅ Correct! Great job.";
@@ -53,20 +44,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     } 
     
-    // ➡️ NEXT CASE CLICKED
     elseif (isset($_POST['next_case'])) {
         $game->nextCase();
         $message = ""; 
     } 
     
-    // ⬅️ PREVIOUS CASE CLICKED
     elseif (isset($_POST['previous_case'])) {
         $game->previousCase();
         $message = "";
     } 
 }
 
-// Save state
 $_SESSION['ducktective_game'] = $game;
 ?>
 
@@ -79,7 +67,6 @@ $_SESSION['ducktective_game'] = $game;
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <style>
-        /* Special Styles for Title & Victory */
         .center-screen {
             text-align: center;
             padding: 50px 20px;
