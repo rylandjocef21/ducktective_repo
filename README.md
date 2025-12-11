@@ -25,7 +25,7 @@ https://duck-tective21.gamer.gd/
 **Remigio, Ryland Jocef** (UI/UX Designer)
   * Designed the CSS interface, color scheme, and animations.
 
-**Reimhel, Fortunato / Bartolazo, Barry** (QA / Content)
+**Fortunato, Reimhel / Bartolazo, Barry** (QA / Content)
   * Created the code snippets (cases) and hints, testing.
 
 ## 4. How to Play
